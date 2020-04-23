@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value = "/")
 public class HomeController extends SiteController{
 
-//    public HomeController() {
-//    pageTitle="Online Health Clinic";
-//    }
+    public HomeController() {
+    pageTitle="meroEclinic";
+    }
     @GetMapping
     public String index(){
         return "home/index";
