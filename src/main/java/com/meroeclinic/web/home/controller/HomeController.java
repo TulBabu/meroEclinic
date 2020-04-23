@@ -25,9 +25,9 @@ public class HomeController extends SiteController{
     public String index(){
         return "home/index";
     }
-    @GetMapping(value = "/about")
+    @GetMapping(value = "/contact")
     public String about(){
-        return "home/index";
+        return "contact_form/index";
     }
     
 }
