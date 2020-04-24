@@ -26,8 +26,16 @@ public class HomeController extends SiteController{
         return "home/index";
     }
     @GetMapping(value = "/contact")
-    public String about(){
+    public String contact(){
         return "contact_form/index";
+    }
+    @GetMapping(value = "/enquiry")
+    public String enquiry(){
+        return "enquiry_form/index";
+    }
+    @GetMapping(value = "/gallery")
+    public String gallery(){
+        return "gallery/index";
     }
     
 }

@@ -1,210 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Contact Us</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--===============================================================================================-->
-        <link rel="icon" type="image/png" href="img/icons/favicon.ico"/>
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/vendor/bootstrap/css/bootstrap.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/fonts/iconic/css/material-design-iconic-font.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/vendor/animate/animate.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/vendor/css-hamburgers/hamburgers.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/vendor/animsition/css/animsition.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/vendor/select2/select2.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/vendor/daterangepicker/daterangepicker.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/vendor/noui/nouislider.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="form/css/util.css">
-        <link rel="stylesheet" type="text/css" href="form/css/main.css">
-        <!--===============================================================================================-->
-    </head>
-    <body>
+<head>
+	<title>Contact V13</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="contact_form/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contact_form/css/util.css">
+	<link rel="stylesheet" type="text/css" href="contact_form/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 
 
-        <div class="container-contact100">
-            <div class="wrap-contact100">
-                <form class="contact100-form validate-form">
-                    <label >
-                            <p style="text-align:center;"><b> NEPAL-BHARAT MAITRI HOSPITAL </b></p>
-                       </label>
-                    <span class="contact100-form-title">
+	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
-                        Contact Us
+		<div class="contact100-more">
+			<i class="zmdi zmdi-phone-in-talk"></i>
+			(977) 01-4158965
+		</div>
 
-                    </span>
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Contact Us
+				</span>
 
-                    <div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
-                        <span class="label-input100">FULL NAME *</span>
-                        <input class="input100" type="text" name="name" placeholder="Enter Your Name">
-                    </div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Name</span>
+					<input class="input100" type="text" name="name" placeholder="Name...">
+					<span class="focus-input100"></span>
+				</div>
 
-                    <div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Your Email (e@a.x)">
-                        <span class="label-input100">Email *</span>
-                        <input class="input100" type="text" name="email" placeholder="Enter Your Email ">
-                    </div>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Email addess...">
+					<span class="focus-input100"></span>
+				</div>
 
-                    <div class="wrap-input100 bg1 rs1-wrap-input100">
-                        <span class="label-input100">Phone</span>
-                        <input class="input100" type="text" name="phone" placeholder="Enter Number Phone">
-                    </div>
+				<div class="wrap-input100">
+					<span class="label-input100">Phone</span>
+					<input class="input100" type="text" name="phone" placeholder="Phone Number...">
+					<span class="focus-input100"></span>
+				</div>
 
-                    <div class="wrap-input100 input100-select bg1">
-                        <span class="label-input100">Needed Services *</span>
-                        <div>
-                            <select class="js-select2" name="service">
-                                <option>Please chooses</option>
-                                <option>New Patient</option>
-                                <option>Payment</option>
-                                <option>Follow up Doctors</option>
-                                <option>Find Reports</option>
-                            </select>
-                            <div class="dropDownSelect2"></div>
-                        </div>
-                    </div>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Message</span>
+					<textarea class="input100" name="message" placeholder="Questions/Comments..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
 
-                    <div class="w-full dis-none js-show-service">
-                        <!--					<div class="wrap-contact100-form-radio">
-                                                                        <span class="label-input100">What type of products do you sell?</span>
-                        
-                                                                        <div class="contact100-form-radio m-t-15">
-                                                                                <input class="input-radio100" id="radio1" type="radio" name="type-product" value="physical" checked="checked">
-                                                                                <label class="label-radio100" for="radio1">
-                                                                                        Phycical Products
-                                                                                </label>
-                                                                        </div>
-                        
-                                                                        <div class="contact100-form-radio">
-                                                                                <input class="input-radio100" id="radio2" type="radio" name="type-product" value="digital">
-                                                                                <label class="label-radio100" for="radio2">
-                                                                                        Digital Products
-                                                                                </label>
-                                                                        </div>
-                        
-                        -->						<div class="contact100-form-radio">
-                            <input class="input-radio100" id="radio3" type="radio" name="type-product" value="service">
-                            <label class="label-radio100" for="radio3">
-                                Services Consulting
-                            </label>
-                        </div><!--
-                </div>-->
-
-                        <div class="wrap-contact100-form-range">
-                            <span class="label-input100">Budget *</span>
-
-                            <div class="contact100-form-range-value">
-                                <span id="value-lower">1</span>-<span id="value-upper">1</span>
-                                <input type="text" name="from-value">
-                                <input type="text" name="to-value">
-                            </div>
-
-                            <div class="contact100-form-range-bar">
-                                <div id="filter-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
-                        <span class="label-input100">Message</span>
-                        <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
-                    </div>
-
-                    <div class="container-contact100-form-btn">
-                        <button class="contact100-form-btn">
-                            <span>
-                                Submit
-                                <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-                            </span>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							Send
+						</button>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1844422350005!2d85.34343321490152!3d27.71159098279011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197a4046a107%3A0xa320bd7858818e8c!2sNepal-Bharat%20Maitri%20Hospital!5e0!3m2!1sen!2snp!4v1587722257290!5m2!1sen!2snp" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 
 
 
-        <!--===============================================================================================-->
-        <script src="form/vendor/jquery/jquery-3.2.1.min.js"></script>
-        <!--===============================================================================================-->
-        <script src="form/vendor/animsition/js/animsition.min.js"></script>
-        <!--===============================================================================================-->
-        <script src="form/vendor/bootstrap/js/popper.js"></script>
-        <script src="form/vendor/bootstrap/js/bootstrap.min.js"></script>
-        <!--===============================================================================================-->
-        <script src="form/vendor/select2/select2.min.js"></script>
-        <script>
-            $(".js-select2").each(function () {
-                $(this).select2({
-                    minimumResultsForSearch: 20,
-                    dropdownParent: $(this).next('.dropDownSelect2')
-                });
+	<div id="dropDownSelect1"></div>
 
+<!--===============================================================================================-->
+	<script src="contact_form/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="contact_form/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="contact_form/vendor/bootstrap/js/popper.js"></script>
+	<script src="contact_form/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="contact_form/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="contact_form/vendor/daterangepicker/moment.min.js"></script>
+	<script src="contact_form/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="contact_form/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqVml6grdnwC28iDgpcYue46_qhQ5C8c0"></script>
+        <script src="https://goo.gl/maps/YuURvW5zudRhvvPE9"></script>
+	<script src="contact_form/js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="contact_form/js/main.js"></script>
 
-                $(".js-select2").each(function () {
-                    $(this).on('select2:close', function (e) {
-                        if ($(this).val() == "Please chooses") {
-                            $('.js-show-service').slideUp();
-                        } else {
-                            $('.js-show-service').slideUp();
-                            $('.js-show-service').slideDown();
-                        }
-                    });
-                });
-            })
-        </script>
-        <!--===============================================================================================-->
-        <script src="form/vendor/daterangepicker/moment.min.js"></script>
-        <script src="form/vendor/daterangepicker/daterangepicker.js"></script>
-        <!--===============================================================================================-->
-        <script src="form/vendor/countdowntime/countdowntime.js"></script>
-        <!--===============================================================================================-->
-        <script src="form/vendor/noui/nouislider.min.js"></script>
-        <script>
-            var filterBar = document.getElementById('filter-bar');
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-            noUiSlider.create(filterBar, {
-                start: [0, 500],
-                connect: true,
-                range: {
-                    'min': 0,
-                    'max': 7500
-                }
-            });
+  gtag('config', 'UA-23581568-13');
+</script>
 
-            var skipValues = [
-                document.getElementById('value-lower'),
-                document.getElementById('value-upper')
-            ];
-
-            filterBar.noUiSlider.on('update', function (values, handle) {
-                skipValues[handle].innerHTML = Math.round(values[handle]);
-                $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
-                $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
-            });
-        </script>
-        <!--===============================================================================================-->
-        <script src="form/js/main.js"></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-        <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() {
-                        dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'UA-23581568-13');
-        </script>
-
-    </body>
+</body>
 </html>
