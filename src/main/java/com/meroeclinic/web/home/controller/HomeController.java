@@ -41,5 +41,9 @@ public class HomeController extends SiteController{
     public String doctors(){
         return "test/doctors/index";
     }
+    @GetMapping(value = "/departments")
+    public String departments(){
+        return "test/department/index";
+    }
     
 }
