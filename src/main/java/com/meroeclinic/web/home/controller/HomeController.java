@@ -23,19 +23,23 @@ public class HomeController extends SiteController{
     }
     @GetMapping
     public String index(){
-        return "home/index";
+        return "test/index";
     }
     @GetMapping(value = "/contact")
     public String contact(){
-        return "contact_form/index";
+        return "test/contact_form/index";
     }
     @GetMapping(value = "/enquiry")
     public String enquiry(){
-        return "enquiry_form/index";
+        return "test/enquiry_form/index";
     }
     @GetMapping(value = "/gallery")
     public String gallery(){
-        return "gallery/index";
+        return "test/gallery/index";
+    }
+    @GetMapping(value = "/doctors")
+    public String doctors(){
+        return "test/doctors/index";
     }
     
 }
