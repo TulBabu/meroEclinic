@@ -1,12 +1,12 @@
-<!--<!DOCTYPE html>
+<div th:replace="test/shared/header"></div>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Contact Us</title>-->
-<div th:replace="test/shared/header"></div>
+        <title>Contact V5</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--===============================================================================================-->
-        <link rel="icon" type="image/png" href="img/icons/favicon.ico"/>
+        <link rel="icon" type="image/png" href="form/images/icons/favicon.ico"/>
         <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="form/vendor/bootstrap/css/bootstrap.min.css">
         <!--===============================================================================================-->
@@ -31,18 +31,11 @@
         <!--===============================================================================================-->
     </head>
     <body>
-
-
         <div class="container-contact100">
             <div class="wrap-contact100">
                 <form class="contact100-form validate-form" method="post" th:action="@{'/'+${pageURI}}">
-                    <label >
-                            <p style="text-align:center;"><b> NEPAL-BHARAT MAITRI HOSPITAL </b></p>
-                       </label>
                     <span class="contact100-form-title">
-
                         Contact Us
-
                     </span>
 
                     <div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
@@ -54,86 +47,26 @@
                         <span class="label-input100">Email *</span>
                         <input class="input100" type="text" name="email" placeholder="Enter Your Email ">
                     </div>
-
                     <div class="wrap-input100 bg1 rs1-wrap-input100">
                         <span class="label-input100">Phone</span>
                         <input class="input100" type="text" name="contactNo" placeholder="Enter Number Phone">
                     </div>
-
-<!--                    <div class="wrap-input100 input100-select bg1">
-                        <span class="label-input100">Needed Services *</span>
-                        <div>
-                            <select class="js-select2" name="service">
-                                <option>Please chooses</option>
-                                <option>New Patient</option>
-                                <option>Payment</option>
-                                <option>Follow up Doctors</option>
-                                <option>Find Reports</option>
-                            </select>
-                            <div class="dropDownSelect2"></div>
-                        </div>
-                    </div>
-
-                    <div class="w-full dis-none js-show-service">
-                        					<div class="wrap-contact100-form-radio">
-                                                                        <span class="label-input100">What type of products do you sell?</span>
-                        
-                                                                        <div class="contact100-form-radio m-t-15">
-                                                                                <input class="input-radio100" id="radio1" type="radio" name="type-product" value="physical" checked="checked">
-                                                                                <label class="label-radio100" for="radio1">
-                                                                                        Phycical Products
-                                                                                </label>
-                                                                        </div>
-                        
-                                                                        <div class="contact100-form-radio">
-                                                                                <input class="input-radio100" id="radio2" type="radio" name="type-product" value="digital">
-                                                                                <label class="label-radio100" for="radio2">
-                                                                                        Digital Products
-                                                                                </label>
-                                                                        </div>
-                        
-                        						<div class="contact100-form-radio">
-                            <input class="input-radio100" id="radio3" type="radio" name="type-product" value="service">
-                            <label class="label-radio100" for="radio3">
-                                Services Consulting
-                            </label>
-                        </div>
-                </div>
-
-                        <div class="wrap-contact100-form-range">
-                            <span class="label-input100">Budget *</span>
-
-                            <div class="contact100-form-range-value">
-                                <span id="value-lower">1</span>-<span id="value-upper">1</span>
-                                <input type="text" name="from-value">
-                                <input type="text" name="to-value">
-                            </div>
-
-                            <div class="contact100-form-range-bar">
-                                <div id="filter-bar"></div>
-                            </div>
-                        </div>
-                    </div>-->
-
                     <div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
                         <span class="label-input100">Message</span>
                         <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
                     </div>
 
                     <div class="container-contact100-form-btn">
-                        <button type="submit" class="contact100-form-btn">
+                        <button class="contact100-form-btn">
                             <span>
                                 Submit
-                                <i class ="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                                <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
                             </span>
                         </button>
                     </div>
                 </form>
             </div>
         </div>
-
-
-
         <!--===============================================================================================-->
         <script src="form/vendor/jquery/jquery-3.2.1.min.js"></script>
         <!--===============================================================================================-->
@@ -149,8 +82,6 @@
                     minimumResultsForSearch: 20,
                     dropdownParent: $(this).next('.dropDownSelect2')
                 });
-
-
                 $(".js-select2").each(function () {
                     $(this).on('select2:close', function (e) {
                         if ($(this).val() == "Please chooses") {
@@ -174,14 +105,13 @@
             var filterBar = document.getElementById('filter-bar');
 
             noUiSlider.create(filterBar, {
-                start: [0, 500],
+                start: [1500, 3900],
                 connect: true,
                 range: {
-                    'min': 0,
+                    'min': 1500,
                     'max': 7500
                 }
             });
-
             var skipValues = [
                 document.getElementById('value-lower'),
                 document.getElementById('value-upper')
@@ -199,14 +129,13 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
         <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() {
-                        dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'UA-23581568-13');
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-23581568-13');
         </script>
-        
-<div th:replace="test/shared/footer" ></div>
-<!--    </body>
-</html>-->
+    </body>
+</html>
+<div th:replace="test/shared/footer"></div>      
