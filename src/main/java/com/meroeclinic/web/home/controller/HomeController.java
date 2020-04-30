@@ -29,10 +29,10 @@ public class HomeController extends SiteController{
     public String contact(){
         return "test/contact_form/index";
     }
-    @GetMapping(value = "/enquiry")
-    public String enquiry(){
-        return "test/enquiry_form/index";
-    }
+//    @GetMapping(value = "/admin")
+//    public String admin(){
+//        return "test/admin/index";
+//    }
     @GetMapping(value = "/gallery")
     public String gallery(){
         return "test/gallery/index";

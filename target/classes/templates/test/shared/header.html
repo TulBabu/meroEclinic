@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>OnlineHealthClinic</title>
+<title th:text="${pageTitle}"></title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,13 +21,15 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/slicknav.css">
 <link rel="stylesheet" href="css/style.css">
-
+<script th:inline="javascript">
+        var $uri = /*[[${pageURI}]]*/ null;
+        var $pageTitle = /*[[${pageTitle}]]*/ null;
+</script>
 </head>
 <body>
 <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
 <header>
 <div class="header-area ">
 <div class="header-top_area">
@@ -89,9 +91,9 @@
 </div>
 <div class="col-xl-3 col-lg-3 d-none d-lg-block">
 <div class="Appointment">
-<div class="book_btn d-none d-lg-block">
+    <div class="book_btn d-none d-lg-block">
 <!--<a class="popup-with-form" href="contact">Make an Appointment</a>-->
-<a class="popup" href="enquiry">Make an Appointment</a>
+<a class="popup" href="appointment" th:title="${pageTitle}">Make an Appointment</a>
 </div>
 </div>
 </div>

@@ -1,0 +1,44 @@
+<!--<div th:replace="test/admin/shared/header"></div>-->
+<div th:replace="test/admin/shared/header"></div>
+<div class="box">
+    <div class="box-header with-border">
+        <h3 class="box-title">Appointment Table</h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="record:${records}">
+                    <td th:text="${record.fullName}"></td>
+                    <td th:text="${record.email}"></td>
+                    <td th:text="${record.contactNo}"></td>
+                    <td th:text="${record.message}"></td>
+                    <td th:text="Action"></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- /.box-body -->
+    <div class="box-footer clearfix">
+        <ul class="pagination pagination-sm no-margin pull-right">
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">»</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--<div th:replace="test/admin/shared/footer"></div>-->
+<div th:replace="test/admin/shared/footer"></div>
