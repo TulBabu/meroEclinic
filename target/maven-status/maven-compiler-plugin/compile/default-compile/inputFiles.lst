@@ -5,7 +5,6 @@ D:\Java\MeroEclinic\src\main\java\com\meroeclinic\web\appointment\entity\Appoint
 D:\Java\MeroEclinic\src\main\java\com\meroeclinic\web\AppRunner.java
 D:\Java\MeroEclinic\src\main\java\com\meroeclinic\web\home\controller\HomeController.java
 D:\Java\MeroEclinic\src\main\java\com\meroeclinic\web\appointment\controller\AppointmentController.java
-D:\Java\MeroEclinic\src\main\java\com\meroeclinic\web\auth\configuration\SecurityConfiguration.java
 D:\Java\MeroEclinic\src\main\java\com\meroeclinic\core\entity\MasterEntity.java
 D:\Java\MeroEclinic\src\main\java\com\meroeclinic\core\controller\SiteController.java
 D:\Java\MeroEclinic\src\main\java\com\meroeclinic\web\configuration\WebConfiguration.java

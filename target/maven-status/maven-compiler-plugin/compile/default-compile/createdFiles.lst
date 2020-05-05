@@ -8,7 +8,6 @@ com\meroeclinic\web\admin\controller\LogoutController.class
 com\meroeclinic\web\appointment\repository\AppointmentRepository.class
 com\meroeclinic\web\configuration\WebConfiguration.class
 com\meroeclinic\web\appointment\controller\AppointmentController.class
-com\meroeclinic\web\auth\configuration\SecurityConfiguration.class
 com\meroeclinic\web\home\controller\HomeController.class
 com\meroeclinic\web\appointment\entity\Appointment.class
 com\meroeclinic\web\admin\controller\AdminController.class
