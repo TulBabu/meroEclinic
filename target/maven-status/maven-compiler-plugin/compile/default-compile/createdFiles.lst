@@ -1,3 +1,5 @@
+com\meroeclinic\web\public_chat\entity\PublicChat.class
+com\meroeclinic\web\public_chat\controller\PublicChatController.class
 com\meroeclinic\core\controller\SiteController.class
 com\meroeclinic\core\controller\CRUDController.class
 com\meroeclinic\web\auth\controller\LoginController.class
@@ -5,6 +7,7 @@ com\meroeclinic\web\configuration\AutomateConfiguration.class
 com\meroeclinic\core\entity\MasterEntity.class
 com\meroeclinic\web\AppRunner.class
 com\meroeclinic\web\admin\controller\LogoutController.class
+com\meroeclinic\web\publicChat\repository\PublicChatRepository.class
 com\meroeclinic\web\appointment\repository\AppointmentRepository.class
 com\meroeclinic\web\configuration\WebConfiguration.class
 com\meroeclinic\web\appointment\controller\AppointmentController.class
